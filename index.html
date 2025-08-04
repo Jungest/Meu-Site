@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Estêvão Jung - Criador de Sites</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: white;
+    }
+
+    header {
+      background: #000;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 1rem 2rem;
+    }
+
+    .logo {
+      height: 60px;
+      width: auto;
+    }
+
+    nav h1 {
+      font-size: 1.5rem;
+      color: #fff;
+      position: relative;
+      right: 600px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    nav a {
+      color: #c9a4ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .intro {
+      margin-top: 2rem;
+    }
+
+    .intro h2 {
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .intro p {
+      margin-top: 0.5rem;
+      color: #ccc;
+    }
+
+    .btn-whatsapp {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #a245ff;
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .btn-whatsapp:hover {
+      background: #c078ff;
+    }
+
+    section {
+      padding: 3rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 1rem;
+      line-height: 2;
+        list-style-position: inside;
+        
+    }
+
+    .cards-container {
+      overflow-x: auto;
+      padding-bottom: 1rem;
+    }
+
+    .cards {
+      display: flex;
+      gap: 1rem;
+      min-width: 1100px;
+      padding: 1rem 0;
+    }
+
+    .card {
+      flex: 0 0 250px;
+      background: #202020;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #333;
+      min-height: 200px;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 1rem;
+      color: #a245ff;
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #000;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .borda {
+      height: 5px;
+      background: linear-gradient(90deg, #a245ff, #25d366, #ff70d1, #a245ff);
+      background-size: 300% 100%;
+      animation: bordaAnimada 6s linear infinite;
+    }
+
+    @keyframes bordaAnimada {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo {
+        margin-bottom: 1rem;
+      }
+
+      .cards {
+        min-width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="img/EJ roxo.png" alt="Logo EJ" class="logo" />
+      <h1>Estêvão Jung</h1>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="intro">
+      <h2>Criação de páginas web com a cara do seu negócio</h2>
+      <p>Simples, modernas e pensadas para pequenos empreendedores</p>
+      <a href="https://wa.me/5531993968896" class="btn-whatsapp" target="_blank">Fale comigo no WhatsApp</a>
+    </div>
+  </header>
+
+  <div class="borda"></div>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Sou Estêvão Jung e ajudo pequenos negócios a terem presença online com sites modernos, rápidos e feitos sob medida. Tenho experiência com páginas simples, landing pages e pequenos sistemas personalizados para lojas ou clínicas.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <ul>
+      <li>✅ Criação de página web</li>
+      <li>✅ Adição de recursos em páginas existentes</li>
+      <li>✅ Redesign de sites antigos</li>
+      <li>✅ Integração com WhatsApp e redes sociais</li>
+      <li>✅ Sites one-page ou com múltiplas seções</li>
+    </ul>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+    <p>Veja alguns dos trabalhos que já desenvolvi:</p>
+    <div class="cards-container">
+      <div class="cards">
+        <div class="card">
+          <h3>Landing Clínica</h3>
+          <p>Página responsiva para clínica estética</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>Barbearia Style</h3>
+          <p>Site institucional simples e elegante</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>Consulta Online</h3>
+          <p>Agendamentos médicos com formulário integrado</p>
+          <a href="#">Ver projeto</a>
+        </div>
+        <div class="card">
+          <h3>Loja FashionFit</h3>
+          <p>E-commerce de roupas com galeria e contato</p>
+          <a href="#">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Vamos conversar sobre seu projeto?</p>
+    <a href="https://wa.me/5531993968896" class="btn-whatsapp" target="_blank">Me chame no WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 - Estêvão Jung. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
